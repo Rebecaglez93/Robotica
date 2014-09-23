@@ -36,6 +36,19 @@ SpecificWorker::~SpecificWorker()
 }
 void SpecificWorker::compute( )
 {
+	TLaserData laser_data = laser_proxy->getLaserData(); // Distancia laser
+	//robot = differentialrobot_proxy->setSpeedBase();
+	try {
+		for(auto i: laser_data){
+			if(i.dist<100){
+				differentialrobot_proxy->stopBase();
+				qDebug()<<"Para";
+				break;
+			}
+		}
+	} catch (const Ice::Exception &E) {
+		std::cout<< E << endl;
+	}
 }
 bool SpecificWorker::setParams(RoboCompCommonBehavior::ParameterList params)
 {

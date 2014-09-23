@@ -1,0 +1,3 @@
+/home/salabeta/robocomp/components/grupo3_robotica/navegacion/CMakeFiles/doc.dir
+/home/salabeta/robocomp/components/grupo3_robotica/navegacion/CMakeFiles/installdoc.dir
+/home/salabeta/robocomp/components/grupo3_robotica/navegacion/src/CMakeFiles/navegacioncomp.dir
